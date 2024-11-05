@@ -1,19 +1,16 @@
 package org.example;
-
+import io.restassured.RestAssured;
 import io.qameta.allure.Description;
 import io.qameta.allure.Step;
 import io.qameta.allure.junit4.DisplayName;
-import io.restassured.RestAssured;
 import org.junit.Before;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.equalTo;
 
 public class Mesto1Test {
 
-    String bearerToken ="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NmQ5NGZiZmZlNGJmMzAwM2Q3NTU4ODUiLCJpYXQiOjE3MzAzNzg1MzQsImV4cCI6MTczMDk4MzMzNH0.Z9wJ2aE0S4fldJeRRo_e6Ohkzrcx7sBQDFSC9a60VgY";
-    ;
+    String bearerToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NmQ5NGZiZmZlNGJmMzAwM2Q3NTU4ODUiLCJpYXQiOjE3MzAzNzg1MzQsImV4cCI6MTczMDk4MzMzNH0.Z9wJ2aE0S4fldJeRRo_e6Ohkzrcx7sBQDFSC9a60VgY";
 
     @Before
     public void setUp() {
